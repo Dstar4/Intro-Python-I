@@ -12,7 +12,9 @@ def is_even(num):
 num = input("Enter a number: ")
 num = int(num)
 
+
 # Print out "Even!" if the number is even. Otherwise print "Odd"
+# YOUR CODE HERE
 
 
 def answer(num):
@@ -22,4 +24,4 @@ def answer(num):
         print("Odd")
 
 
-# YOUR CODE HERE
+answer(num)
