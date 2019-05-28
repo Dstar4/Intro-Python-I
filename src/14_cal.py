@@ -18,7 +18,26 @@ and does the following:
    the format that your program expects arguments to be given.
    Then exit the program.
 """
-
 import sys
 import calendar
 from datetime import datetime
+from sys import argv
+
+cal = calendar
+d = datetime.now()
+
+if len(argv) == 1:
+    print(d.month)
+
+elif len(argv) == 2:
+    month = int(argv[1])
+    currentYear = d.year
+    print(cal.monthcalendar(currentYear, month))
+
+elif len(argv) == 3:
+    month = int(argv[1])
+    year = int(argv[2])
+    print(cal.monthcalendar(year, month))
+
+else:
+    print("The format expected does not match the input")
