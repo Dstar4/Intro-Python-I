@@ -63,12 +63,11 @@ def f4(**kwargs):
         print("key: %s, value:, %s" % (key, value))
 
 
-print("\n")
-
 # Should print
 # key: a, value: 12
 # key: b, value: 30
 f4(a=12, b=30)
+print("\n")
 
 # Should print
 # key: city, value: Berkeley
@@ -83,3 +82,4 @@ d = {
 
 # What thing do you have to add to make this work?
 f4(**d)
+print("\n")
